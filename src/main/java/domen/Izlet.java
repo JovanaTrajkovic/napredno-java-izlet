@@ -40,7 +40,7 @@ public class Izlet extends OpstiDomenskiObjekat {
 
 	@Override
 	public String nazivTabele() {
-		return " Izlet";
+		return " izlet ";
 	}
 
 	@Override
@@ -111,6 +111,9 @@ public class Izlet extends OpstiDomenskiObjekat {
 	}
 
 	public void setCena(int cena) {
+		if(cena<1000) {
+			 throw  new IllegalArgumentException("Cena mora biti veca od 1000");
+		}
 		this.cena = cena;
 	}
 
