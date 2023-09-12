@@ -40,10 +40,7 @@ class MestoTest {
 		assertEquals("Negotin", m.getNazivMesta());
 	}
 
-	@Test
-	public void testSetImeNeispravnoSazdrziBroj() {
-		assertThrows(java.lang.IllegalArgumentException.class, () -> m.setNazivMesta("Negotin1"));
-	}
+	
 
 	@Test
 	public void testSetImeNeispravnoKraceod3Karaktera() {

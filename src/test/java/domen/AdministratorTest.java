@@ -7,7 +7,11 @@ import java.sql.ResultSet;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+/**
+ *
+ * @author Jovana
+ *
+ */
 public class AdministratorTest {
 
 	// private mora
