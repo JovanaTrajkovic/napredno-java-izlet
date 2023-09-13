@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Predstavlja putnika koji je clan grupe. Ima identifikator, ime, prezime,email
  * i broj telefona.
@@ -18,22 +20,26 @@ public class Putnik extends OpstiDomenskiObjekat {
 	/**
 	 * Identifikator putnika
 	 */
-	private Long putnikID;
+	private transient Long putnikID;
 	/**
 	 * Ime putnika
 	 */
+	@SerializedName("Ime putnika")
 	private String imePutnika;
 	/**
 	 * Prezime putnika
 	 */
+	@SerializedName("Prezime putnika")
 	private String prezimePutnika;
 	/**
 	 * Email putnika
 	 */
+	@SerializedName("Email putnika")
 	private String email;
 	/**
 	 * Broj telefona putnika
 	 */
+	@SerializedName("Broj telefona putnika")
 	private String brojTelefona;
 
 	/**
